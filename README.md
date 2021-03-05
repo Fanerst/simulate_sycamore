@@ -1,6 +1,6 @@
 # Simulating the Sycamore quantum supremacy circuit
 
-This repo contains data we have obtained in simulating the Sycamore quantum supremacy circuits with $n=53$ qubits, $m=20$ cycles using the tensor network method proposed in [arXiv:03...](http://arxiv.org/abs/03...)
+This repo contains data we have obtained in simulating the Sycamore quantum supremacy circuits with $n=53$ qubits, $m=20$ cycles using the tensor network method proposed in [arXiv:2103.03074](http://arxiv.org/abs/2103.03074).
 
 We plan to release the code soon.
 
