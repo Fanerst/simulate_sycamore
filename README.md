@@ -11,5 +11,13 @@ We plan to release the code soon.
 3. `data/n53_m20_s0_ABCD_s24_simplify_gpulimit_30_edges.txt`  contains the 23 slicing edges which splits the overall contraction task into $2^{23}$ subtasks, each of which has space complexity $2^{30}$ hence can be contracted using  fit into 32G memory.
 4. `data/n53_m20_s0_ABCD_s24_simplify_gpulimit_30_ordernew.txt` includes the contraction order. For each edge in the contraction order, say $i, j$, the $i$th and $j$th tensor in the head partition will be contracted by tracing out the shared indices. Then the resulting tensor will be put back into the $i$th position.
 5. [vector.pt](http://home.itp.ac.cn/~panzhang/sycamore/vector.pt) contains the cut tensor of of the head partition whose overall dimension is $2^{23}$ and the annotations of corresponding dimensions. The file is saved using `pytorch`, one can use `torch.load` to load the data.
-6. The obtained $2^{21}$ samples for the Sycamore circuits with $n=53$ qubits and $m=20$ cycles and their probabilities are listed in [probs.txt](http://home.itp.ac.cn/~panzhang/sycamore/probs.txt) file. Notice that the assignment we assign to all closed qubits are fixed to $\underbrace{0,0,0,\cdots,0}_{32}$, and the open qubit ids  are 11, 12, 13, 19, 20, 21, 22, 23, 28, 29, 30, 31, 32, 37, 38, 39, 40, 41, 44, 45, 46.
+6. The obtained $2^{21}$ samples for the Sycamore circuits with $n=53$ qubits and $m=20$ cycles and their probabilities and amplitudes are listed in [probs.txt](http://home.itp.ac.cn/~panzhang/sycamore/probs.txt) file. Notice that the configuration we assigned to all closed qubits are fixed to $\underbrace{0,0,0,\cdots,0}_{32}$, and the open qubit ids  are 11, 12, 13, 19, 20, 21, 22, 23, 28, 29, 30, 31, 32, 37, 38, 39, 40, 41, 44, 45, 46.
+
+## Notice
+
+We noticed that in our paper  [arXiv:2103.03074](http://arxiv.org/abs/2103.03074) we have a misprint in the first row of Tab.III, where the `amplitude` should be `|amplitude|`. Neverthless, we put the refined table below.
+
+![image-20210308101302534](./assets/image-20210308101302534.png)
+
+The $2^{21}$ bitstrings with amplitudes and probabilities can be download [here](http://home.itp.ac.cn/~panzhang/sycamore/probs.txt).
 
