@@ -1,0 +1,8 @@
+# Note that you need to manually install pytorch to run examples of this repo
+# Be careful that the default networkx version dependence of cirq(0.7.0) is 2.3, 
+# but in order to correctly use cirq to read circuit files, you need to manually install a higher version
+# run "pip install --upgrade --no-deps --force-reinstall networkx==2.5"
+cirq==0.7.0
+opt_einsum==3.3.0
+kahypar==1.1.5
+scipy==1.8.0
